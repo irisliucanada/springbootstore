@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Spring Shop Online</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+      <th:block th:include="/_header"></th:block>
+   </head>
+   <body>
+      
+      <th:block th:include="/_menu"></th:block>
+       
+      <div class="page-title"></div>
+      <div class="container">
+         <h3>Thank you for Order. Your have paid by <span th:text="${param.method}">Test</span> successfully.</h3>
+<!--          Your order number is: <span th:utext="${lastOrderedCart.orderNum}"></span> -->
+                     <div id="pay">
+                     
+<!--           <p th:if="${result} eq 'methodCredit'">You payed by credit card successfully.</p> -->
+<!-- 	      <p th:if="${result} eq 'methodPaypal'">You payed by Paypal successfully.</p> -->
+	            <img  th:src="@{/img/bookstore.jpg}">
+	      
+	 </div>
+      </div>
+
+      <th:block th:include="/_footer"></th:block>
+       
+   </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Spring BooK Store</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+      <th:block th:include="/_header"></th:block>
+   </head>
+   <body>
+      
+      <th:block th:include="/_menu"></th:block>
+       
+      <section id="spring1">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    
+     
+    <div class="carousel-item active">
+                
+     <img th:src="@{/img/bookstore.jpg}" class="center-block" >
+    
+
+      <div class="carousel-caption d-none d-md-block">
+    <h1 style="font-size: 50px; font-weight: 900; margin-bottom: 140px; margin-right: 600px; color: #000;">SpringBooK<br>
+<p style="font-size: 1rem; color: #000;"> <br> </p>
+ <a href=""  style="clear:both; background: #000; border: none; color: #fff; font-size: 1em; padding: 10px; cursor: pointer; font-size: 17px;" />SHOP NOW <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></a>
+    </h1>
+    
+  </div>
+    </div>
+   
+  </div>
+  
+</div>
+</section>
+<br>
+
+<!-- ------------------------------section end---------------------------------- -->
+  
+      <!-- ------------------------------section end---------------------------------- -->
+<!--       <section id="product_sec"> -->
+<!--          <div class="row"> -->
+<!--            <div class="col-lg-3"> -->
+<!--              <img th:src="@{/img/python.jpg}"> -->
+             
+<!--            </div> -->
+
+<!--            <div class="col-lg-3"> -->
+<!--              <img th:src="@{/img/thinkinjava.jpg}"> -->
+<!--            </div> -->
+
+<!--            <div class="col-lg-3"> -->
+<!--              <img th:src="@{/img/prospringboot.jpg}"> -->
+<!--            </div> -->
+
+<!--            <div class="col-lg-3"> -->
+<!--              <img th:src="@{/img/introduction-to-java-programming.jpg}"> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--       </section> -->
+
+
+
+
+
+       
+      <th:block th:include="/_footer"></th:block>
+       
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Spring Shop Online</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+      <th:block th:include="/_header"></th:block>
+   </head>
+   <body>
+   
+      
+      <th:block th:include="/_menu"></th:block>
+         <h3>Cart Summary:</h3>
+         <ul>
+            <li>Quantity: <span th:utext="${myCart.quantityTotal}"></span>$</li>
+                   <li>Total:
+               <span class="total"
+                  th:utext="${#numbers.formatDecimal(myCart.amountTotal,3,2,'COMMA')}">  
+               </span>
+            </li>
+         </ul>
+     <div id="pay">
+          <p th:if="${result} eq 'methodCredit'">You payed by credit card successfully.</p>
+	      <p th:if="${result} eq 'methodPaypal'">You payed by Paypal successfully.</p>
+	            <img  th:src="@{/img/bookstore.jpg}">
+	      
+	 </div>
+      <th:block th:include="/_footer"></th:block>
+      
+   </body>
+</html>
